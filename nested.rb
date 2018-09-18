@@ -87,6 +87,10 @@ programmer_hash[:yukihiro_matsumoto] => {
  }
 end
 
+a = {:"0" => {:CA => {:count => 10}}}
+b = {:"0" => {:NY => {:count => 11}}} 
+a[:"0"][:NY] = b[:"0"][:NY]
+
 def changing_alan
 	programmer_hash = 
  		{
